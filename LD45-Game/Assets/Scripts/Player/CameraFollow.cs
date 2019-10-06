@@ -13,6 +13,12 @@ public class CameraFollow : MonoBehaviour
     // Time to follow target
     public float smoothTime = 0.15f;
 
+    private void Start()
+    {
+        // Initiate camera on player starting position
+        transform.position = new Vector3(target.position.x, target.position.y);
+    }
+
 
     // Update is called once per frame
     void Update()

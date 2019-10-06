@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PressPlate : MonoBehaviour
+public class GameHandler : MonoBehaviour
 {
-    GameObject BookShelf;
-    bool isPressed = false;
+    bool isVictory = false;
+    bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,12 @@ public class PressPlate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPressed == true)
+        if(isVictory == true)
+        {
+
+        }
+
+        if(isGameOver == true)
         {
 
         }
